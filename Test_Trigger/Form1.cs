@@ -46,7 +46,7 @@ namespace Test_Trigger
 
         private void BtnEkle_Click(object sender, EventArgs e)
         {
-            baglanti.Open();//komutu command yapmak için Crtl R R 
+            baglanti.Open();//komutu command yapmak için Crtl R R test
             SqlCommand komut = new SqlCommand("insert into TBLKITAPLAR(ad,yazar,sayfa,yayınevi,tur) values (@p1,@p2,@p3,@p4,@p5)", baglanti);
             //alttakiler yaparak da SQL Injection'ı engelliyorsun.
             komut.Parameters.AddWithValue("@p1", TxtAd.Text);
